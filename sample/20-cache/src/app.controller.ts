@@ -10,6 +10,7 @@ import {
 export class AppController {
   @Get()
   findAll() {
+    console.warn('findAll() ran')
     return [{ id: 1, name: 'Nest' }];
   }
 }
